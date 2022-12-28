@@ -1,3 +1,13 @@
+# Two workflows
+# 1. 
+# 	a. Lint, test and deploy on push
+# 	b. Run the lint, test and build script
+# 	c. Use one or three jobs (running after each other)
+
+# 2. Action on "issues"
+# 	a. output event details in the shell via echo
+# 	b. Use the "issues" event & "github" context
+
 name: build-ci
 on: 
   push: 
@@ -15,5 +25,7 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
+      - name: Test
+        run: npm run test
       
         
