@@ -1,0 +1,6 @@
+name: Issues workflow
+on: 
+  push:
+    branches: [main]
+  workflow_dispatch: 
+    branches: [main]

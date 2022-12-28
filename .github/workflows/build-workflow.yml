@@ -1,8 +1,9 @@
 name: build-workflow
 on:
   push:
-    branches: [ma*]
-  workflow_dispatch: [ma*]
+    branches: [main]
+  workflow_dispatch: 
+    branches: [main]
 jobs:
   lint:
     runs-on: ubuntu-latest
