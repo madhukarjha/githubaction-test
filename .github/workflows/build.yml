@@ -1,10 +1,9 @@
-name: build
-
+name: build-ci
 on: 
   push: 
-    branches["main"]
+    branches: ["main"]
   workflow_dispatch:
-    branches["main"]
+    branches: ["main"]
 jobs:
   build:
     runs-on: ubuntu-latest
